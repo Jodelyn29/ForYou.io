@@ -1,0 +1,87 @@
+<footer class="container-fluid bg-dark p-5">
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Home</h6>
+            <hr>
+            <p>
+                <a href="index.html">Home</a>
+                <br><a href="index.html#newAnchor">New</a>
+                <br><a href="shop.html">Shop</a>
+                <br><a href="#contactAnchor">Contact</a>
+            </p>
+        </div>
+
+        <div class="col-sm-3">
+            <hr>
+            <h6 class="text-secondary">New</h6>
+            <p>
+                <a href="shop.html/#NewAnchor">SLEEK SILHOUETTES</a>
+                <br><a href="shop.html/#newAnchor">LIFE IN MOTION</a>
+                <br><a href="shop.html/#newAnchor">STEP FORWARD</a>
+            </p>
+
+            <h6 class="text-secondary">Blog</h6>
+
+            <p>
+                <a href="index.html#Node">Outfit Ideas</a>
+                <br><a href="shop.html/#blogAnchor">Things We Realized About Our New Reality</a>
+                <br><a href="shop.html/#blogAnchor">Say Goodbye To Your Messy Room</a>
+            </p>
+
+        </div>
+
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Shop</h6>
+            <hr>
+
+            <p>
+                <a href="shop.html">Tees</a>
+                <br><a href="shop.html">Dresses</a>
+                <br><a href="shop.html">Jackets</a>
+            </p>
+
+
+            <p>
+                <a href="shop.html">Skirts</a>
+                <br><a href="shop.html">Bodycon</a>
+                <br><a href="shop.html">JAGGER PANTS</a>
+            </p>
+
+        </div>
+
+        <div class="col-sm-3" id="contactAnchor">
+            <h6 class="text-secondary">Contact</h6>
+            <hr>
+            <p>
+                <i class="fas fa-envelope"></i> Foryou@gmail.com
+            </p>
+            <p>
+                <i class="fas fa-camera"></i> INSTAGRAM 
+                <br><i class="fab fa-facebook-square"></i> FACEBOOK 
+                <br><i class="fab fa-twitter-square"></i> TWITTER 
+                <br><i class="fab fa-google-plus-square"></i> GOOGLE+ 
+            </p>
+        </div>
+
+    </div>
+
+    <p class="text-center">ForYou &copy; 2020</p>
+</footer>
+
+<script>
+    $(function() {
+        // this is the page scrolling script
+        $('.dropdown-item, .nav-item').on('click', function(e) {
+            if ( this.hash !== "" ) {
+                e.preventDefault();
+                var anchor = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(anchor).offset().top
+                }, 800, function() {
+                    window.location.hash = anchor;
+                });
+            }
+        });
+    });
+</script>
